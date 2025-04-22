@@ -14,6 +14,15 @@
         padding: 60px 0;
       }
 
+      .nav-link-hover:hover {
+        color: #14532d !important; 
+      }
+
+      .nav-link.active {
+        color: #14532d !important; 
+        font-weight: 600;
+      }
+
       .timeline {
         position: relative;
         padding-left: 2rem;
@@ -27,7 +36,7 @@
         top: 0.4rem; 
         bottom: 0.4rem; 
         width: 2px;
-        background-color: black;
+        background-color: #000000;
       }
       
       /* Titik di setiap item */
@@ -43,201 +52,215 @@
         top: 0.3rem;
         width: 10px;
         height: 10px;
-        background-color: black;
+        background-color: #000000;
         border-radius: 50%;
       }
       
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <span class="navbar-text">
-        Febrina's Portofolio
-      </span>
-      <div class="position-absolute top-0 end-0" id="navbarText" >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Febrina's Portfolio</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            <a class="nav-link nav-link-hover" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="portofolio.html">Portofolio</a>
+            <a class="nav-link nav-link-hover active" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="services.html">Services</a>
+            <a class="nav-link nav-link-hover" href="portofolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link nav-link-hover" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover" href="contact.html">Contact</a>
           </li>
         </ul>
-        
       </div>
     </div>
   </nav>
-    <section class="home-section d-flex flex-column align-items-center" style="min-height: 100vh;">
-  <!-- About Me Card -->
-  <div class="card p-3 shadow mb-5" style="max-width: 1000px; width: 100%;">
-    <div class="row g-0">
-      <div class="col-12 d-flex align-items-center justify-content-center" style="height: 100px;">
-        <h1 class="fw-bold">About me 🍃</h1>
+
+  <section class="home-section d-flex flex-column align-items-center" style="min-height: 100vh;">
+  <!-- About Me Card-->
+    <div class="card p-3 shadow mb-5 mt-5" style="max-width: 1000px; width: 100%;">
+      <div class="row g-0">
+        <div class="col-12 d-flex align-items-center justify-content-center" style="height: 100px;">
+          <h1 class="fw-bold">About me 🍃</h1>
+        </div>
+
+        <div class="col-md-8 border-end">
+          <div class="row g-0">
+            <div class="col-md-6 p-3 border-bottom border-end">
+              <h3 class="fw-bold">Febrina Aulia Azahra</h3>
+            </div>
+            <div class="col-md-6 p-3 border-bottom">
+              <h5 class="fw-bold">COMPUTER SCIENCE STUDENT</h5>
+              <p class="mb-0">+62 895 3445 33797</p>
+            </div>
+
+            <div class="col-md-12 p-3 border-bottom">
+              <p class="mb-0">
+                Hi there, my name is Febrina. I’m a passionate and curious Computer Science student who is eager to learn, 
+                adaptable, and loves building tech-based solutions. I’m skilled in programming, problem-solving, and teamwork, 
+                with hands-on experience in various academic and personal projects.
+              </p>
+            </div>
+
+            <div class="col-md-12 p-3">
+              <p class="mb-3 fw-semibold">
+                If you have a tech project, trust me. I’m ready to learn, build, and grow with it. <br>
+                <strong>Let’s connect and explore exciting opportunities for collaboration and innovation!</strong>
+              </p>
+
+              <div class="d-flex align-items-center gap-3">
+                <div class="d-flex flex-column align-items-start gap-3">
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="24" class="me-2">
+                    <span>febrina.auzahra@gmail.com</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="24" class="me-2">
+                    <span>Febrina1602</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" class="me-2">
+                    <span>febrinaAA</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" class="me-2">
+                    <span>Febrn.16_</span>
+                  </div>
+                </div>                      
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-4 d-flex align-items-center justify-content-center">
+          <img src="/media/profile.jpeg" alt="Febrina Aulia" class="img-fluid" style="max-height: 300px;">
+        </div>
       </div>
+    </div>
 
-      <!-- Kiri -->
-      <div class="col-md-8 border-end">
-        <div class="row g-0">
-          <div class="col-md-6 p-3 border-bottom border-end">
-            <h3 class="fw-bold">Febrina Aulia Azahra</h3>
+    <div class="card p-4 shadow" style="max-width: 1000px; width: 100%;">
+      <div class="row">
+    
+        <!-- Resume Header -->
+        <div class="col-12 mb-4">
+          <h2 class="fw-bold bg-dark text-white d-inline-block px-4 py-2 rounded">
+            My Resume 📝
+          </h2>
+        </div>
+    
+        <!-- Experience -->
+        <div class="col-md-6">
+          <h3 class="fw-bold border-bottom pb-2">Experience</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <p class="fw-bold mb-1">
+                2021 <span class="float-end text-muted">Jan–Feb 2021</span>
+              </p>
+              <p class="fw-bold mb-0">Archiving Intern</p>
+              <p class="mb-1">Pemerintah Kota Bekasi</p>
+              <ul class="mb-0">
+                <li>Managed and organized both physical and digital documents</li>
+                <li>Classified and labeled files according to categories and code systems</li>
+                <li>Assisted in the digitization of important documents for administrative</li>
+                <li>Entered archival data into the digital system to support efficient retrieval and tracking</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <p class="fw-bold mb-1">
+                2022 <span class="float-end text-muted">Apr–Aug 2022</span>
+              </p>
+              <p class="fw-bold mb-0">Graphic Design & Social Media</p>
+              <p class="mb-1">MO.RA Essentials</p>
+              <ul class="mb-0">
+                <li>Concepting & designing content for social media</li>
+                <li>Designing thumbnails for e-commerce</li>
+                <li>Creating reels video</li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <p class="fw-bold mb-1">
+                Now <span class="float-end text-muted">2018–NOW</span>
+              </p>
+              <p class="fw-bold mb-0">Graphic Design</p>
+              <p class="mb-1">Freelancer</p>
+              <ul class="mb-0">
+                <li>Designing social media posts, print ads, logo, branding, etc.</li>
+              </ul>
+            </div>
+
           </div>
-          <div class="col-md-6 p-3 border-bottom">
-            <h5 class="fw-bold">COMPUTER SCIENCE STUDENT</h5>
-            <p class="mb-0">+62 895 3445 33797</p>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Achievement -->
+          <h3 class="fw-bold border-bottom pb-2">Achievement</h3>
+          <ul class="ps-3">
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+          </ul>
+    
+          <!-- Education -->
+          <h3 class="fw-bold border-bottom pt-3 pb-2">Education</h3>
+          <p class="fw-bold mb-0">S1 Computer Science</p>
+          <p>Universitas Lampung, 2023 - Now. GPA 3.96</p>
+    
+          <!-- Skills -->
+          <h3 class="fw-bold border-bottom pt-3 pb-2">Skills</h3>
+          <ul class="ps-3 mb-0">
+            <li>Adobe Illustrator</li>
+            <li>Logo Design</li>
+            <li>Vector Illustration</li>
+            <li>Branding</li>
+          </ul>
+          <div class="mt-3">
+            <a href="/media/CV_Febrina.pdf" class="btn btn-outline-success" download>
+              Download CV
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-12 p-3 border-bottom">
-            <p class="mb-0">
-              Hi there, my name is Febrina. I’m a passionate and curious Computer Science student who is eager to learn, 
-              adaptable, and loves building tech-based solutions. I’m skilled in programming, problem-solving, and teamwork, 
-              with hands-on experience in various academic and personal projects.
-            </p>
-          </div>
-
-          <div class="col-md-12 p-3">
-            <p class="mb-3 fw-semibold">
-              If you have a tech project, trust me. I’m ready to learn, build, and grow with it. <br>
-              <strong>Let’s connect and explore exciting opportunities for collaboration and innovation!</strong>
-            </p>
-
-            <div class="d-flex align-items-center gap-3">
-              <div class="d-flex flex-column align-items-start gap-3">
-                <div class="d-flex align-items-center">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="24" class="me-2">
-                  <span>febrina.auzahra@gmail.com</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="24" class="me-2">
-                  <span>Febrina1602</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" class="me-2">
-                  <span>febrinaAA</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" class="me-2">
-                  <span>Febrn.16_</span>
-                </div>
-              </div>                      
+  <footer class="text-white text-center text-lg-start border-top" style="background-color: #728e73;">
+    <div class="container p-4">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+          <h6 class="fw-bold mb-1">Febrina's Portfolio</h6>
+          <small class="text-light">© 2025 All rights reserved.</small>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center justify-content-md-end gap-4 flex-wrap">
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="24" class="me-2">
+              <span class="text-white">Febrina1602</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" class="me-2">
+              <span class="text-white">febrinaAA</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" class="me-2">
+              <span class="text-white">Febrn.16_</span>
             </div>
           </div>
         </div>
       </div>
-
-      
-      <div class="col-md-4 d-flex align-items-center justify-content-center">
-        <img src="/media/profile.jpeg" alt="Febrina Aulia" class="img-fluid" style="max-height: 300px;">
-      </div>
     </div>
-  </div>
+  </footer>
 
-  
-  <div class="card p-4 shadow" style="max-width: 1000px; width: 100%;">
-    <div class="row">
-  
-      <!-- Resume Header -->
-      <div class="col-12 mb-4">
-        <h2 class="fw-bold bg-dark text-white d-inline-block px-4 py-2 rounded">
-          My Resume 📝
-        </h2>
-      </div>
-  
-      <!-- Experience -->
-      <div class="col-md-6">
-        <h3 class="fw-bold border-bottom pb-2">Experience</h3>
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <p class="fw-bold mb-1">
-              2021 <span class="float-end text-muted">Jan–Feb 2021</span>
-            </p>
-            <p class="fw-bold mb-0">Archiving Intern</p>
-            <p class="mb-1">Pemerintah Kota Bekasi</p>
-            <ul class="mb-0">
-              <li>Managed and organized both physical and digital documents</li>
-              <li>Classified and labeled files according to categories and code systems</li>
-              <li>Assisted in the digitization of important documents for administrative</li>
-              <li>Entered archival data into the digital system to support efficient retrieval and tracking</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <p class="fw-bold mb-1">
-              2022 <span class="float-end text-muted">Apr–Aug 2022</span>
-            </p>
-            <p class="fw-bold mb-0">Graphic Design & Social Media</p>
-            <p class="mb-1">MO.RA Essentials</p>
-            <ul class="mb-0">
-              <li>Concepting & designing content for social media</li>
-              <li>Designing thumbnails for e-commerce</li>
-              <li>Creating reels video</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <p class="fw-bold mb-1">
-              Now <span class="float-end text-muted">2018–NOW</span>
-            </p>
-            <p class="fw-bold mb-0">Graphic Design</p>
-            <p class="mb-1">Freelancer</p>
-            <ul class="mb-0">
-              <li>Designing social media posts, print ads, logo, branding, etc.</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-  
-      <div class="col-md-6">
-        <!-- Achievement -->
-        <h3 class="fw-bold border-bottom pb-2">Achievement</h3>
-        <ul class="ps-3">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-        </ul>
-  
-        <!-- Education -->
-        <h3 class="fw-bold border-bottom pt-3 pb-2">Education</h3>
-        <p class="fw-bold mb-0">S1 Computer Science</p>
-        <p>Universitas Lampung, 2023 - Now. GPA 3.96</p>
-  
-        <!-- Skills -->
-        <h3 class="fw-bold border-bottom pt-3 pb-2">Skills</h3>
-        <ul class="ps-3 mb-0">
-          <li>Adobe Illustrator</li>
-          <li>Logo Design</li>
-          <li>Vector Illustration</li>
-          <li>Branding</li>
-        </ul>
-        <div class="mt-3">
-          <a href="/media/CV_Febrina.pdf" class="btn btn-outline-success" download>
-            Download CV
-          </a>
-        </div>
-        
-      </div>
-  
-    </div>
-  </div>
-  
-</section>
-
-      
-
-      
-    
 </body>
 </html>

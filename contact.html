@@ -14,40 +14,115 @@
       padding: 60px 0;
     }
 
+    .nav-link-hover:hover {
+      color: #14532d !important; 
+    }
+
+    .nav-link.active {
+      color: #14532d !important; 
+      font-weight: 600;
+    }
     
   </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <span class="navbar-text">
-            Febrina's Portofolio
-          </span>
-          <div class="position-absolute top-0 end-0" id="navbarText" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="portofolio.html">Portofolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Febrina's Portfolio</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover" href="portofolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-hover active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home-section pt-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card p-4 shadow mb-5 mt-5" style="max-width: 1000px; width: 100%;">
+      <div class="text-center mb-4">
+        <h1 class="fw-bold">Contact Me 📞</h1>
+      </div>
+      <div class="row g-4">
+        <!-- Kontak -->
+        <div class="col-md-6">
+          <h4 class="fw-bold">Let’s discuss your Project</h4>
+          <p class="text-muted">There are many variations...</p>
+        
+          <div class="d-flex align-items-start mb-2">
+            <div class="mb-3 d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Gmail" width="24" class="me-2">
+              <span>febrina.auzahra@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start">
+            <div class="mb-3 d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="WhatsApp" width="24" class="me-2">
+              <span>0895 34453 3797</span>
+            </div>
           </div>
         </div>
-      </nav>
-
-
+        
+  
+        <!-- Form -->
+        <div class="col-md-6">
+          <form action="index.html">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="text-white text-center text-lg-start border-top" style="background-color: #728e73;">
+    <div class="container p-4">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+          <h6 class="fw-bold mb-1">Febrina's Portfolio</h6>
+          <small class="text-light">© 2025 All rights reserved.</small>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center justify-content-md-end gap-4 flex-wrap">
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="24" class="me-2">
+              <span class="text-white">Febrina1602</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" class="me-2">
+              <span class="text-white">febrinaAA</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" width="24" class="me-2">
+              <span class="text-white">Febrn.16_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
